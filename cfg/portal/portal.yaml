@@ -1,6 +1,3 @@
-# KongAir Developer Portal configuration
-# Defines the portal, navigation, pages, and reusable snippets for kongctl sync
-
 portals:
   - ref: kongair-portal
     name: "KongAir Portal"
@@ -12,6 +9,7 @@ portals:
     auto_approve_applications: false
     default_api_visibility: "public"
     default_page_visibility: "public"
+    default_application_auth_strategy_id: !ref kongair-apikey-strategy#id
 
     customization:
       ref: kongair-portal-customization
@@ -142,6 +140,14 @@ portals:
         status: "published"
         content: !file ./snippets/kongair-hero.md
 
+      - ref: kongair-hero-illustration
+        name: "kongair-hero-illustration"
+        title: "KongAir Hero Illustration"
+        description: "Primary aircraft illustration displayed in the hero."
+        visibility: "public"
+        status: "published"
+        content: !file ./snippets/kongair-hero-image.md
+
       - ref: kongair-logo-bar
         name: "kongair-logo-bar"
         title: "Partner Logos"
@@ -149,6 +155,14 @@ portals:
         visibility: "public"
         status: "published"
         content: !file ./snippets/kongair-logo-bar.md
+
+      - ref: kongair-destination-art
+        name: "kongair-destination-art"
+        title: "Destination Route Illustration"
+        description: "Supplemental route map art for portal pages."
+        visibility: "public"
+        status: "published"
+        content: !file ./snippets/kongair-destination-art.md
 
       - ref: kongair-page-nav
         name: "kongair-page-nav"

@@ -4,6 +4,12 @@ name: "kongair-hero"
 ---
 ::
 
+::snippet
+---
+name: "kongair-destination-art"
+---
+::
+
 Welcome to the KongAir Developer Portal. Build elegant travel experiences using
 our operational APIs for schedules, bookings, and customer engagement.
 

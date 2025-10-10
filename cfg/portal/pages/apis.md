@@ -1,14 +1,15 @@
 # API Catalog
 
-KongAir offers four core services. Each entry below links to the OpenAPI
-reference bundled with this configuration.
+Discover the KongAir services available to partner developers. The list below
+pulls directly from the APIs published to this portal, ensuring the cards stay
+in sync as new versions roll out.
 
-| API | Description | Version | Spec |
-| --- | ----------- | ------- | ---- |
-| Flights | Real-time schedules, flight metadata, and aircraft amenities. | !file ../apis/flights/openapi.yaml#info.version | [Download](../apis/flights/openapi.yaml) |
-| Routes | Registered KongAir city pairs with average durations. | !file ../apis/routes/openapi.yaml#info.version | [Download](../apis/routes/openapi.yaml) |
-| Bookings | Create and retrieve customer reservations. | !file ../apis/bookings/openapi.yaml#info.version | [Download](../apis/bookings/openapi.yaml) |
-| Customer Information | Customer profiles, loyalty status, and payment methods. | !file ../apis/customer-information/openapi.yaml#info.version | [Download](../apis/customer-information/openapi.yaml) |
+::apis-list
+---
+persist-page-number: true
+cta-text: "View API"
+---
+::
 
 ### Suggested Next Steps
 

@@ -32,5 +32,19 @@ full-width: true
     ---
     Begin integration
     ::
+
+  #image
+    ::container
+    ---
+    display: "flex"
+    align-items: "center"
+    justify-content: "center"
+    ---
+      :::snippet
+      ---
+      name: "kongair-hero-illustration"
+      ---
+      :::
+    ::
   ::
 ::
