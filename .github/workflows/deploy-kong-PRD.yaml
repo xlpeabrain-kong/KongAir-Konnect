@@ -37,7 +37,7 @@ jobs:
       - name: deck sync
         run: |
           deck sync --select-tag platform-repo-managed \
-              -s PRD/kong/kong.yaml \
+              PRD/kong/kong.yaml \
               --konnect-addr="https://sg.api.konghq.com" \
               --konnect-control-plane-name="muthoot-demo" \
               --konnect-token ${{ secrets.KONNECT_PAT }}
