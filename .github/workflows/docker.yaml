@@ -1,12 +1,12 @@
 name: Build Docker Images
 
-# on:
-#   push:
-#     branches:
-#       - "main"
-#     paths-ignore:
-#       - 'PRD/**'
-#       - 'platform/kong/.generated/kong.yaml'
+on:
+  push:
+    branches:
+      - "dev"
+    paths-ignore:
+      - 'PRD/**'
+      - 'platform/kong/.generated/kong.yaml'
 
 jobs:
   docker:
